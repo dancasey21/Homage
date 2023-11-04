@@ -1,0 +1,136 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(29, 19, 63);
+}
+.header-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+
+nav ul ul {
+  display: none;
+  opacity: 0;
+}
+nav ul li:focus-within > ul,
+nav ul li:hover > ul {
+  display: inherit;
+  list-style: none;
+  opacity: 1;
+}
+nav {
+  background-color: rgb(29, 19, 63);
+  color: rgb(255, 255, 255);
+}
+
+nav ul li {
+  background-color: rgb(29, 19, 63);
+}
+
+nav ul ul {
+  position: absolute;
+  top: 60px;
+}
+
+nav ul ul li {
+  display: list-item;
+  width: 170px;
+  background-color: rgb(16, 7, 44);
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0;
+  padding: 0px;
+  line-height: 50px;
+  font-size: 16px;
+}
+nav a {
+  line-height: 40px;
+  padding: 10px;
+  display: block;
+  width: 50px;
+}
+nav ul ul li {
+  width: 250px;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  top: -10px;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -50px;
+  left: 230px;
+  width: 250px;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(180, 180, 180);
+  margin: 10px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(16, 7, 44);
+  padding: 10px;
+}
+
+.searchbar img {
+  position: absolute;
+  top: 5px;
+  right: 185px;
+}
+
+h3 {
+  width: 150px;
+
+  margin: 30px;
+  color: rgb(255, 255, 255);
+  border: 1px;
+  border-style: solid;
+}
+
+.best-sellers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  nav > ul > li > a {
+    display: none;
+  }
+  nav > ul > li > ul {
+    display: initial;
+    top: 175px;
+    opacity: 1;
+  }
+  nav > ul > li > ul > li {
+    display: inline-block;
+    background-color: rgb(29, 19, 63);
+  }
+  nav ul ul ul li {
+    top: 0;
+    left: 20px;
+  }
+}
