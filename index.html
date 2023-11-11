@@ -81,9 +81,10 @@
         </nav>
       </div>
       
-        <div>
+        <div class="logo">
           <img src="images/CDKeys.jpg" alt="CD-Keys" />
         </div>
+        <div class="header-icons">
         <div>
           <img src="images/wishlist.svg" alt="wishlist" />
         </div>
@@ -95,25 +96,35 @@
         </div>
       </div>
       </div>
+      </div>
       <div>
-        <p>
+        <p class="superfast">
             <img src="images/fast_2x.png" alt="cloud">
-            SUPER FAST INSTANT DIGITAL DOWNLOAD
+            <span>Super Fast</span> Instant Digital Download
         </p>
       </div>
+
     <div class="searchbar">
-      <input type="text" placeholder="Search for products">
-      <img src="images/search.svg" alt="search">
+      <input id="searchinput" type="text" placeholder="Search for products">
+      <button type="submit" id="searchsubmit" name="searchsubmit">
+        <img src="images/search.svg" alt="search">
+      </button>
     </div>
     </header>
 
     <main>
 <section>
-    <img src="images/FC24-956x528-En.png" alt="FC24">
+    <div class="mainimage">
+      <img src="images/FC24-956x528-En.png" alt="FC24">
+    </div>
+    <div class="content">
+      <a class="content1" href="#">Coming Soon</a>
+      <a class="content2" href="#">Daily Deals</a>
+    </div>
 </section>
 
 <section>
-    <h3>BEST SELLERS</h3>
+    <h3 class="main-section">BEST SELLERS</h3> 
     <div class="best-sellers">
     <img src="images/easports.png" alt="EA FC24">
     <img src="images/mw3.jpg" alt="Modern Warfare 3">
@@ -127,7 +138,7 @@
 </section>
 
 <section>
-    <h3>COMING SOON</h3>
+    <h3 class="main-section">COMING SOON</h3>
 <div class="coming-soon">
 <img src="images/fm24.jpg" alt="Football Manager 24">
 <img src="images/warhammer.jpg" alt="Warhammer">
@@ -137,36 +148,50 @@
 <img src="images/mw3.jpg" alt="Modern Warfare 3">
 </div>
 </section>
+</main>
 
 <Footer>
-    <div>CDKEYS</div>
-    <div>MY ACCOUNT</div>
-    <div>CUSTOMER SERVICE</div>
-    <div>CONTACT US</div>
-    <div>CURRENCY & LANGUAGE</div>
-<div>
+  <div class="footer-content">
+    <h3>CDKEYS</h3>
+    <h3>ACCOUNT</h3> 
+    <h3>CUSTOMER SERVICE</h3>
+    <h3>CONTACT US</h3>
+    <h3>CURRENCY & LANGUAGE</h3>
+  
+
     <div>GET IN THE GAME</div>
-    <img src="images/facebook.png" alt="Facebook">
-    <img src="images/instagram.png" alt="Instagram">
-    <img src="images/pinterest.png" alt="P Interest">
-    <img src="images/youtube.png" alt="Youtube">
-    <img src="images/twitch.png" alt="Twitch">
-</div>
+    <div class="footer-media">
+      <div><img src="images/facebook.png" alt="Facebook"></div>
+      <div><img src="images/instagram.png" alt="Instagram"></div>
+      <div><img src="images/pinterest.png" alt="P Interest"></div>
+      <div><img src="images/youtube.png" alt="Youtube"></div>
+      <div><img src="images/twitch.png" alt="Twitch"></div>
+    
+    </div>
     <div>WE ACCEPT</div>
-    <img src="images/apple-pay.png" alt="Apple Pay">
-    <img src="images/diners-club.png" alt="Diners Club">
-    <img src="images/discover.png" alt="Discover">
-    <img src="images/giropay.png" alt="Giropay">
-    <img src="images/ideal.png" alt="Ideal">
-    <img src="images/maestro.png" alt="Maestro">
-    <img src="images/mastercard.png" alt="Mastercard">
-    <img src="images/neteller.png" alt="Neteller">
-    <img src="images/paypal.png" alt="Paypal">
-    <img src="images/skrill.png" alt="Skrill">
-    <img src="images/sofort.png" alt="Sofort">
-    <img src="images/visa.png" alt="Visa">
+    <div class="footer-pay">
+      <div><img src="images/apple-pay.png" alt="Apple Pay"></div>
+      <div><img src="images/diners-club.png" alt="Diners Club"></div>
+      <div><img src="images/discover.png" alt="Discover"></div>
+      <div><img src="images/giropay.png" alt="Giropay"></div>
+      <div><img src="images/ideal.png" alt="Ideal"></div>
+      <div><img src="images/maestro.png" alt="Maestro"></div>
+      <div><img src="images/mastercard.png" alt="Mastercard"></div>
+      <div><img src="images/neteller.png" alt="Neteller"></div>
+      <div><img src="images/paypal.png" alt="Paypal"></div>
+      <div><img src="images/skrill.png" alt="Skrill"></div>
+      <div><img src="images/sofort.png" alt="Sofort"></div>
+      <div><img src="images/visa.png" alt="Visa"></div>
+    </div>
+    <div>
+      <p>No Payment Fees - No Hidden Fees</p>
+    </div>
+    <div>
+      &copy; CDKeys.com 2023, all rights reserved
+    </div>
+  </div>
 </Footer>
 
-    </main>
+   
   </body>
 </html>

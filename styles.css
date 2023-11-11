@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  color: rgb(255, 255, 255);
 }
 
 body {
@@ -8,11 +9,18 @@ body {
   background-color: rgb(29, 19, 63);
 }
 
-.header-content {
+.logo {
   margin-top: 10px;
+  margin-left: -250px;
+}
+
+footer {
+  background-color: rgb(11, 5, 27);
+}
+
+.header-content {
   display: flex;
   flex-direction: row;
-  margin: 20px;
   justify-content: space-between;
 }
 
@@ -43,7 +51,7 @@ nav ul li {
 
 nav ul ul {
   position: absolute;
-  top: 60px;
+  top: 50px;
 }
 
 nav ul ul li {
@@ -79,49 +87,115 @@ nav ul ul li {
 
 nav ul ul ul li {
   position: relative;
-  top: -50px;
+  top: -40px;
   left: 230px;
   width: 250px;
 }
 
-p {
+.superfast {
   display: flex;
   flex-direction: row;
   border: 1px;
   border-style: solid;
-  border-color: rgb(180, 180, 180);
+  border-color: rgb(102, 102, 102);
   margin: 10px;
   justify-content: center;
   color: rgb(255, 255, 255);
+  gap: 10px;
 }
 
 .searchbar {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  position: relative;
-  background-color: rgb(16, 7, 44);
+  background-color: rgb(11, 5, 27);
   padding: 10px;
 }
 
-.searchbar img {
-  position: absolute;
-  top: 5px;
-  right: 185px;
+#searchinput {
+  width: 75%;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
 }
 
-h3 {
+#searchsubmit {
+  width: 5rem;
+  height: 4rem;
+  margin-left: -5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.main-section {
   width: 150px;
+  text-align: center;
   margin: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(185, 185, 185);
   border: 1px;
   border-style: solid;
+  box-shadow: 1px 1px 8px 1px rgb(185, 185, 185), 1px 1px 4px 1px rgb(185, 185, 185) inset;
 }
 
-.best-sellers {
+.best-sellers,
+.coming-soon {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+}
+
+.header-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.content1 {
+  background-color: rgb(45, 103, 209);
+  width: 300px;
+  line-height: 2;
+}
+
+.content2 {
+  background-color: rgb(207, 30, 68);
+  width: 300px;
+  line-height: 2;
+}
+
+span {
+  color: rgb(101, 226, 128);
+}
+
+.mainimage {
+  margin-top: 10px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 30px;
+  gap: 20px;
+}
+
+.footer-media,
+.footer-pay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-content: flex-start;
+  gap: 20px;
 }
 
 @media screen and (min-width: 600px) {
