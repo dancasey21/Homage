@@ -1,11 +1,11 @@
 html {
   font-size: 62.5%;
-  color: rgb(255, 255, 255);
+  color: rgb(237, 237, 237);
 }
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(29, 19, 63);
+  background-color: rgb(31, 20, 62);
 }
 
 .logo {
@@ -17,6 +17,12 @@ footer {
   background-color: rgb(11, 5, 27);
 }
 .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,12 +42,12 @@ nav ul li:hover > ul {
   opacity: 1;
 }
 nav {
-  background-color: rgb(29, 19, 63);
+  background-color: rgb(31, 20, 62);
   color: rgb(255, 255, 255);
 }
 
 nav ul li {
-  background-color: rgb(29, 19, 63);
+  background-color: rgb(31, 20, 62);
 }
 
 nav ul ul {
@@ -52,7 +58,7 @@ nav ul ul {
 nav ul ul li {
   display: list-item;
   width: 170px;
-  background-color: rgb(16, 7, 44);
+  background-color: rgb(31, 20, 62);
 }
 a {
   color: rgb(255, 255, 255);
@@ -147,6 +153,7 @@ nav ul ul ul li {
 }
 .content {
   display: flex;
+  flex-direction: row;
 }
 
 .content1 {
@@ -198,10 +205,49 @@ span {
   }
   nav > ul > li > ul > li {
     display: inline-block;
-    background-color: rgb(29, 19, 63);
+    background-color: rgb(31, 20, 62);
   }
   nav ul ul ul li {
     top: 0;
     left: 20px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  nav ul ul li {
+    width: 110px;
+  }
+
+  #searchinput {
+    width: 75%;
+    height: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+  }
+
+  .searchbar {
+    background-color: rgb(31, 20, 62);
+  }
+
+  .header-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    padding: 18px 20px 10px;
+    align-items: start;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .mainimage {
+    margin-top: 250px;
   }
 }
