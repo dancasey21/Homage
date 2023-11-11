@@ -1,10 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 html {
   font-size: 62.5%;
   color: rgb(237, 237, 237);
 }
 body {
-  padding: 0;
-  margin: 0;
   background-color: rgb(31, 20, 62);
 }
 
@@ -16,6 +18,7 @@ body {
 footer {
   background-color: rgb(11, 5, 27);
 }
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -63,7 +66,7 @@ nav ul ul li {
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  margin: 0;
+  margin: 0px;
   padding: 0px;
   line-height: 50px;
   font-size: 16px;
@@ -194,12 +197,36 @@ span {
   gap: 20px;
 }
 
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(11, 5, 27);
+  height: 70px;
+  gap: 10px;
+}
+
+.heart {
+  background-color: rgb(31, 20, 62);
+  height: 25px;
+  width: 25px;
+}
+
+.cart {
+  background-color: rgb(26, 209, 148);
+  width: 130px;
+  height: 25px;
+}
+
 @media screen and (min-width: 600px) {
-  nav > ul > li > a {
+  nav > ul > li > a,
+  .content {
     display: none;
   }
   nav > ul > li > ul {
     display: initial;
+
     top: 175px;
     opacity: 1;
   }
@@ -209,7 +236,7 @@ span {
   }
   nav ul ul ul li {
     top: 0;
-    left: 20px;
+    left: 5px;
   }
 
   .header-content {
@@ -249,5 +276,29 @@ span {
 
   .mainimage {
     margin-top: 250px;
+  }
+
+  .burger {
+    font-size: 12px;
+  }
+
+  .mainimage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-section {
+    width: 350px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+
+  .footer-content1,
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 30px;
   }
 }
