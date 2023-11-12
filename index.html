@@ -81,38 +81,39 @@
               </ul>
             </nav>
           </div>
-
-          <div class="logo">
-            <img src="images/CDKeys.jpg" alt="CD-Keys" />
+          
+            <div class="logo">
+              <img src="images/CDKeys.jpg" alt="CD-Keys" />
+            </div>
+            <div class="header-icons">
+              <div>
+                <img src="images/wishlist.svg" alt="wishlist" />
+              </div>
+              <div>
+                <img class="avatar" src="images/cat.jpg" alt="avatar" />
+              </div>
+              <div>
+                <img src="images/basket.svg" alt="basket" />
+              </div>
+            </div>
           </div>
-          <div class="header-icons">
-            <div>
-              <img src="images/wishlist.svg" alt="wishlist" />
-            </div>
-            <div>
-              <img src="images/cat.jpg" alt="avatar" />
-            </div>
-            <div>
-              <img src="images/basket.svg" alt="basket" />
-            </div>
+          <div class="superfast">
+            <p>
+              <img src="images/fast_2x.png" alt="cloud" />
+              <span>Super Fast</span> Instant Digital Download
+            </p>
           </div>
-        </div>
-        <div>
-          <p class="superfast">
-            <img src="images/fast_2x.png" alt="cloud" />
-            <span>Super Fast</span> Instant Digital Download
-          </p>
-        </div>
 
-        <div class="searchbar">
-          <input
-            id="searchinput"
-            type="text"
-            placeholder="Search for products"
-          />
-          <button type="submit" id="searchsubmit" name="searchsubmit">
-            <img src="images/search.svg" alt="search" />
-          </button>
+          <div class="searchbar">
+            <input
+              id="searchinput"
+              type="text"
+              placeholder="Search for products"
+            />
+            <button type="submit" id="searchsubmit" name="searchsubmit">
+              <img src="images/search.svg" alt="search" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -120,8 +121,80 @@
     <main>
       <section>
         <div class="mainimage">
-          <img src="images/FC24-956x528-En.png" alt="FC24" />
+          <div id="image1">
+            <img src="images/FC24-956x528-En.png" alt="FC24" />
+            <a href="#image7"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image2"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
+
+          <div id="image2">
+            <img
+              src="images/Assassinscreedmirage.png"
+              alt="Assassins Creed Mirage"
+            />
+            <a href="#image1"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image3"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
+
+          <div id="image3">
+            <img src="images/citiesskylinesII.png" alt="Cities Skylines 2" />
+            <a href="#image2"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image4"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
+
+          <div id="image4">
+            <img src="images/fm2024.png" alt="Football Manager 2024" />
+            <a href="#image3"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image5"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
+
+          <div id="image5">
+            <img src="images/forzamotorsport.png" alt="Forza Motorsports" />
+            <a href="#image4"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image6"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
+
+          <div id="image6">
+            <img src="images/lordsofthefallen.png" alt="Lord Of The Fallen" />
+            <a href="#image5"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image7"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
+
+          <div id="image7">
+            <img src="images/psn.png" alt="PSN Wallet" />
+            <a href="#image6"
+              ><img src="images/chevron-left.svg" alt="Prev"
+            /></a>
+            <a href="#image1"
+              ><img src="images/chevron-right.svg" alt="Next"
+            /></a>
+          </div>
         </div>
+
         <div class="content">
           <a
             class="content1"
@@ -142,7 +215,9 @@
         <h2 class="main-section">BEST SELLERS</h2>
         <div class="best-sellers">
           <div>
-            <img src="images/easports.png" alt="EA FC24" />
+            <div class="product-image">
+              <img src="images/easports.png" alt="EA FC24" />
+            </div>
             <div class="products">
               <div>£33.99</div>
               <div class="heart">
@@ -155,7 +230,9 @@
           </div>
 
           <div>
-            <img src="images/mw3.jpg" alt="Modern Warfare 3" />
+            <div class="product-image">
+              <img src="images/mw3.jpg" alt="Modern Warfare 3" />
+            </div>
             <div class="products">
               <div>£55.99</div>
               <div class="heart">
@@ -168,7 +245,9 @@
           </div>
 
           <div>
-            <img src="images/5900_xbox.jpg" alt="Xbox 5900 Points" />
+            <div class="product-image">
+              <img src="images/5900_xbox.jpg" alt="Xbox 5900 Points" />
+            </div>
             <div class="products">
               <div>£34.99</div>
               <div class="heart">
@@ -181,7 +260,9 @@
           </div>
 
           <div>
-            <img src="images/robocop.jpg" alt="Robocop" />
+            <div class="product-image">
+              <img src="images/robocop.jpg" alt="Robocop" />
+            </div>
             <div class="products">
               <div>£25.99</div>
               <div class="heart">
@@ -194,7 +275,9 @@
           </div>
 
           <div>
-            <img src="images/fm24.jpg" alt="Football Manager 24" />
+            <div class="product-image">
+              <img src="images/fm24.jpg" alt="Football Manager 24" />
+            </div>
             <div class="products">
               <div>£29.49</div>
               <div class="heart">
@@ -207,7 +290,9 @@
           </div>
 
           <div>
-            <img src="images/12000_xbox_1.jpg" alt="Xbox 12000 Points" />
+            <div class="product-image">
+              <img src="images/12000_xbox_1.jpg" alt="Xbox 12000 Points" />
+            </div>
             <div class="products">
               <div>£67.99</div>
               <div class="heart">
@@ -220,7 +305,9 @@
           </div>
 
           <div>
-            <img src="images/2800_xbox.jpg" alt="Xbox 2800 Points" />
+            <div class="product-image">
+              <img src="images/2800_xbox.jpg" alt="Xbox 2800 Points" />
+            </div>
             <div class="products">
               <div>£17.29</div>
               <div class="heart">
@@ -233,7 +320,9 @@
           </div>
 
           <div>
-            <img src="images/xboxpass1.jpg" alt="Xbox Game Pass" />
+            <div class="product-image">
+              <img src="images/xboxpass1.jpg" alt="Xbox Game Pass" />
+            </div>
             <div class="products">
               <div>£5.99</div>
               <div class="heart">
@@ -251,7 +340,9 @@
         <h2 class="main-section">COMING SOON</h2>
         <div class="coming-soon">
           <div>
-            <img src="images/fm24.jpg" alt="Football Manager 24" />
+            <div class="product-image">
+              <img src="images/fm24.jpg" alt="Football Manager 24" />
+            </div>
             <div class="products">
               <div>£29.49</div>
               <div class="heart">
@@ -264,7 +355,9 @@
           </div>
 
           <div>
-            <img src="images/warhammer.jpg" alt="Warhammer" />
+            <div class="product-image">
+              <img src="images/warhammer.jpg" alt="Warhammer" />
+            </div>
             <div class="products">
               <div>£29.99</div>
               <div class="heart">
@@ -277,7 +370,9 @@
           </div>
 
           <div>
-            <img src="images/tintin.jpg" alt="TinTin" />
+            <div class="product-image">
+              <img src="images/tintin.jpg" alt="TinTin" />
+            </div>
             <div class="products">
               <div>£25.99</div>
               <div class="heart">
@@ -290,7 +385,9 @@
           </div>
 
           <div>
-            <img src="images/likeadragon.jpg" alt="Like A Dragon" />
+            <div class="product-image">
+              <img src="images/likeadragon.jpg" alt="Like A Dragon" />
+            </div>
             <div class="products">
               <div>£30.99</div>
               <div class="heart">
@@ -303,7 +400,9 @@
           </div>
 
           <div>
-            <img src="images/talesofarise.jpg" alt="Tales Od Arise" />
+            <div class="product-image">
+              <img src="images/talesofarise.jpg" alt="Tales Od Arise" />
+            </div>
             <div class="products">
               <div>£36.99</div>
               <div class="heart">
@@ -316,7 +415,9 @@
           </div>
 
           <div>
-            <img src="images/mw3.jpg" alt="Modern Warfare 3" />
+            <div class="product-image">
+              <img src="images/mw3.jpg" alt="Modern Warfare 3" />
+            </div>
             <div class="products">
               <div>£55.99</div>
               <div class="heart">
