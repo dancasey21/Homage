@@ -166,7 +166,7 @@ nav ul ul ul li {
   margin: 10px;
 }
 
-.content {
+.phone-content {
   display: flex;
   flex-direction: row;
 }
@@ -187,23 +187,20 @@ span {
   color: rgb(101, 226, 128);
 }
 
-.mainimage div {
+.mainimage {
   margin-top: 10px;
-  position: absolute;
-  top: 300px;
-  left: 0;
-}
-
-.mainimage div:target {
-  z-index: 1;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin-top: 20px;
   padding: 30px;
   gap: 20px;
+}
+
+.footer-content li {
+  color: rgb(110, 109, 147);
 }
 
 .footer-media,
@@ -230,12 +227,27 @@ span {
   background-color: rgb(31, 20, 62);
   height: 25px;
   width: 25px;
+  padding: 5px;
 }
 
 .cart {
   background-color: rgb(26, 209, 148);
   width: 130px;
   height: 25px;
+  padding-left: 50px;
+}
+
+.cloud {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.safe,
+.trustpilot {
+  display: none;
 }
 
 .avatar {
@@ -245,7 +257,7 @@ span {
 
 @media screen and (min-width: 600px) {
   nav > ul > li > a,
-  .content {
+  .phone-content {
     display: none;
   }
   nav > ul > li > ul {
@@ -272,9 +284,32 @@ span {
   .searchbar {
     background-color: rgb(31, 20, 62);
     grid-area: header5;
+    position: sticky;
   }
   .superfast {
     grid-area: header3;
+    background-color: rgb(11, 5, 27);
+  }
+  .ratings,
+  .trustpilotlogo {
+    width: 120px;
+    height: 25px;
+  }
+  .safe,
+  .trustpilot {
+    display: flex;
+    top: 10px;
+    background-color: rgb(11, 5, 27);
+    justify-content: space-evenly;
+  }
+  .trustpilot {
+    padding-top: 15px;
+  }
+  .shield {
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   nav ul ul li {
     width: 100px;
@@ -293,15 +328,15 @@ span {
   .header-main {
     grid-area: header4;
   }
-  .mainimage {
-    margin-top: 250px;
-  }
   .burger {
     font-size: 12px;
   }
   .mainimage {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .main-section {
     width: 350px;

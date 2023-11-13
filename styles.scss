@@ -2,12 +2,21 @@
   padding: 0;
   margin: 0;
 }
+
+$color-primary: rgb(31, 20, 62);
+$color-secondary: rgb(11, 5, 27);
+
+@mixin layout($type, $direction) {
+  display: ($type);
+  flex-direction: ($direction);
+}
+
 html {
   font-size: 62.5%;
   color: rgb(237, 237, 237);
 }
 body {
-  background-color: rgb(31, 20, 62);
+  background-color: $color-primary;
 }
 
 .logo {
@@ -16,18 +25,16 @@ body {
 }
 
 footer {
-  background-color: rgb(11, 5, 27);
+  background-color: $color-secondary;
 }
 
 .header-content {
-  display: flex;
-  flex-direction: column;
+  @include layout(flex, column);
   justify-content: space-between;
 }
 
 .header-main {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   justify-content: space-between;
 }
 li {
@@ -45,12 +52,12 @@ nav ul li:hover > ul {
   opacity: 1;
 }
 nav {
-  background-color: rgb(31, 20, 62);
+  background-color: $color-primary;
   color: rgb(255, 255, 255);
 }
 
 nav ul li {
-  background-color: rgb(31, 20, 62);
+  background-color: $color-primary;
 }
 
 nav ul ul {
@@ -61,7 +68,7 @@ nav ul ul {
 nav ul ul li {
   display: list-item;
   width: 170px;
-  background-color: rgb(31, 20, 62);
+  background-color: $color-primary;
 }
 a {
   color: rgb(255, 255, 255);
@@ -93,8 +100,7 @@ nav ul ul ul li {
 }
 
 .superfast p {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   border: 1px;
   border-style: solid;
   border-color: rgb(102, 102, 102);
@@ -105,10 +111,9 @@ nav ul ul ul li {
 }
 
 .searchbar {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   justify-content: center;
-  background-color: rgb(11, 5, 27);
+  background-color: $color-secondary;
   padding: 10px;
 }
 #searchinput {
@@ -141,23 +146,20 @@ nav ul ul ul li {
 
 .best-sellers,
 .coming-soon {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
 .header-icons {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   gap: 10px;
   margin-top: 10px;
   margin: 10px;
 }
-.content {
-  display: flex;
-  flex-direction: row;
+.phone-content {
+  @include layout(flex, row);
 }
 
 .content1 {
@@ -176,29 +178,24 @@ span {
   color: rgb(101, 226, 128);
 }
 
-.mainimage div {
+.mainimage {
   margin-top: 10px;
-  position: absolute;
-  top: 300px;
-  left: 0;
-}
-
-.mainimage div:target {
-  z-index: 1;
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
+  @include layout(flex, column);
+  margin-top: 20px;
   padding: 30px;
   gap: 20px;
 }
 
+.footer-content li {
+  color: rgb(110, 109, 147);
+}
+
 .footer-media,
 .footer-pay {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   flex-wrap: wrap;
   padding: 10px;
   align-content: flex-start;
@@ -206,34 +203,46 @@ span {
 }
 
 .products {
-  display: flex;
-  flex-direction: row;
+  @include layout(flex, row);
   justify-content: center;
   align-items: center;
-  background-color: rgb(11, 5, 27);
+  background-color: $color-secondary;
   height: 70px;
   gap: 10px;
 }
 
 .heart {
-  background-color: rgb(31, 20, 62);
+  background-color: $color-primary;
   height: 25px;
   width: 25px;
+  padding: 5px;
 }
 
 .cart {
   background-color: rgb(26, 209, 148);
   width: 130px;
   height: 25px;
+  padding-left: 50px;
 }
 
+.cloud {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.safe,
+.trustpilot {
+  display: none;
+}
 .avatar {
   clip-path: circle(50%);
 }
 
 @media screen and (min-width: 600px) {
   nav > ul > li > a,
-  .content {
+  .phone-content {
     display: none;
   }
   nav > ul > li > ul {
@@ -243,12 +252,12 @@ span {
   }
   nav > ul > li > ul > li {
     display: inline-block;
-    background-color: rgb(31, 20, 62);
+    background-color: $color-primary;
   }
   nav ul ul ul li {
     top: 0;
     left: 5px;
-    background-color: rgb(11, 5, 27);
+    background-color: $color-secondary;
     width: 85px;
   }
 
@@ -261,14 +270,39 @@ span {
       "header4 header5 header6";
   }
   .searchbar {
-    background-color: rgb(31, 20, 62);
+    background-color: $color-primary;
     grid-area: header5;
+    position: sticky;
   }
 
   .superfast {
     grid-area: header3;
+    background-color: $color-secondary;
   }
 
+  .ratings,
+  .trustpilotlogo {
+    width: 120px;
+    height: 25px;
+  }
+
+  .safe,
+  .trustpilot {
+    display: flex;
+    top: 10px;
+    background-color: $color-secondary;
+    justify-content: space-evenly;
+  }
+
+  .trustpilot {
+    padding-top: 15px;
+  }
+  .shield {
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   nav ul ul li {
     width: 100px;
   }
@@ -290,10 +324,6 @@ span {
     grid-area: header4;
   }
 
-  .mainimage {
-    margin-top: 250px;
-  }
-
   .burger {
     font-size: 12px;
   }
@@ -301,6 +331,9 @@ span {
   .mainimage {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .main-section {
@@ -312,8 +345,7 @@ span {
 
   .footer-content1,
   .footer-social {
-    display: flex;
-    flex-direction: row;
+    @include layout(flex, row);
     justify-content: space-between;
     line-height: 30px;
   }
